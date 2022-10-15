@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
   <head>
       <meta charset="UTF-8">
@@ -10,15 +10,18 @@
       <title>inicio</title>
   </head>
 
+  <header>
+
+  </header>
+
   <body>
 
     <div class="container">
 
-      <div class="row row-col-2 d-flex flex-wrap" id="firstfila">
-
-        <div class="d-flex col-lg-6 order-3 order-lg-1 p-2" id="firstCol">
+      <div class="row row-col-2 order-2 d-flex flex-wrap" id="firstfila">
+        <div class="d-flex col-lg-6 order-sm-3 order-lg-1 p-2" id="firstCol">
           
-          <div class="card col-lg-12 col-12 me-2 p-2 m-1 px-3">
+          <div class="card col-lg-12 col-12 order-2 me-2 p-2 m-1 px-3">
             <form id="formNuevoAnuncio">
               <div class="mb-2 col-12 d-block">
                 <!--Estado-->
@@ -91,9 +94,7 @@
 
           </div>
 
-        </div>
-
-        <div class="col-lg-6 order-2 p-2 d-block" id="secundCol">
+          <div class="col-lg-12 order-2 p-2 d-block" id="secundCol">
             <div class="mb-2 col-sm-auto d-block">
               <div class="mb-2 col-sm-12 d-flex-nowrap">
                 <label for="inputMarca" class="col-12 mb-1 col-form-label">Titulo Breve del Anuncio</label>
@@ -129,11 +130,96 @@
                 </div>
             </div>
           
-        </div>   
-        
-        <div class="row">
-          <div class="col-lg-6 d-block order-1 d-sm-none order-lg-3 p-2 " id="ThirdCol">
+        </div>
 
+        </div>
+      </div>
+
+      <div class="row row-col-2 order-1 d-flex flex-wrap" id="Secondfila">
+        
+        <div class="col-lg-6 p-2 d-block">
+
+          <div class="card mb-3 d-none d-sm-none d-md-block " style="max-width: 540px;">
+            <div class="row g-0">
+              
+              <div class="col-md-2">
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <img src="icons/mas.png" alt="iconomascard">
+                  </div>
+                  <div class="row mb-3">
+                    <img src="icons/mas.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <p>N</p>
+                      </div>
+                      <div class="col">
+                        <p>Tamanyo</p>
+                      </div>
+                      <div class="col">
+                        <p>Tipo</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p>1</p>
+                      </div>
+                      <div class="col">
+                        <p>145kb</p>
+                      </div>
+                      <div class="col">
+                        <p>jpg</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p>2</p>
+                      </div>
+                      <div class="col">
+                        <p>145kb</p>
+                      </div>
+                      <div class="col">
+                        <p>jpg</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p>3</p>
+                      </div>
+                      <div class="col">
+                        <p>145kb</p>
+                      </div>
+                      <div class="col">
+                        <p>jpg</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <p>4</p>
+                      </div>
+                      <div class="col">
+                        <p>145kb</p>
+                      </div>
+                      <div class="col">
+                        <p>jpg</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="icons/xiaomi.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-block order-first d-sm-none p-2 " id="ThirdCol">
             <div class="card">
                 
                 <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
@@ -176,39 +262,40 @@
                 </div>
 
               </div>
-          </div>
-          <div class="col-lg-6">
-
+              
           </div>
         </div>
-      
-      </div> <!--Fin de la fila 1-->
 
-    </div> <!--Fin del container-->
+        <div class="col-lg-6 p-2 d-block">
+
+          <div class="container order-lg-5 p-1 d-flex justify-content-center">
+            <div class="card col-4 col-lg-3">
+              <div class="align-self-center"">
+                <h3>Precio</h3>
+              </div>
+              <div class="input-group col-sm-4 col-lg-4 ">
+                <span class="input-group-text ">$</span>
+                <input type="text" class="form-control col-lg-2" aria-label="Amount (to the nearest dollar)">
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="container d-flex justify-content-center order-lg-6" id="botones">
+            <button type="button" class="btn btn-warning me-4">
+              <i class="fa-regular fa-xmark"></i>Cancelar
+            </button>
+            <button type="button" class="btn btn-warning me-2">Guardar                                                                                                                          
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 
+
 </html>
-
-<!-- Precio
-<div class="container order-lg-5 p-1 d-flex justify-content-end">
-  <div class="card col-4 col-lg-3">
-    <div cl">
-      <h3>Precio</h3>
-    </div>
-    <div class="input-group col-sm-4 col-lg-4 ">
-      <span class="input-group-text ">$</span>
-      <input type="text" class="form-control col-lg-2" aria-label="Amount (to the nearest dollar)">
-    </div>
-  </div>
-</div>
-<br>
-
-
-<div class="container d-flex justify-content-center order-lg-6" id="botones">
-  <button type="button" class="btn btn-warning me-4">
-    <i class="fa-regular fa-xmark"></i>Cancelar
-  </button>
-  <button type="button" class="btn btn-warning me-2">Guardar                                                                                                                          
-  </button>
-</div>
