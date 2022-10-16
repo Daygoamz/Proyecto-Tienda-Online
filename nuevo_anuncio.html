@@ -347,12 +347,12 @@
 
                         <!--Botones-->
                         <div class="d-flex justify-content-center" id="botones">
-                            <a id="zzzz" href="principal.html" class="btn btn-warning me-4"><strong>Cancelar</strong></a>
+                            <a href="principal.html" class="btn btn-warning me-4"><strong>Cancelar</strong></a>
                             <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#myModal" style="box-shadow:3%;">
                                 <strong>Guardar</strong>
                             </button>
-                            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
+                            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                                <div class="modal-dialog modal-dialog-centered">
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <h1 class="modal-title fs-5" id="exampleModalLabel">¡¡¡Confirmacion!!!</h1>
@@ -363,7 +363,7 @@
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary" onclick="location.href='principal.html'">Save changes</button>
+                                      <button id="botoncito" type="button" class="btn btn-primary" onclick="location.href='principal.html'">Guardar Cambios</button>
                                     </div>
                                   </div>
                                 </div>
@@ -387,12 +387,7 @@
     </div>
     <!--container-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        $(function () {
-            $('#mymodal').modal('show');
-            setTimeout(function () {
-            $('#mymodal').modal('hide');
-            }, 5000);
-        });
+
     </script>
 
 </body>
